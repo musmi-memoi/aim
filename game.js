@@ -46,7 +46,7 @@ function calculateScore(event) {
 function startGame() {
 	score = 0;
 	gameTime = 30;
-	scoreDisplay.textContent = `スコア: ${score}`;
+	scoreDisplay.textContent = `${score}`;
 	timeBar.style.width = "100%";
 	titleScreen.style.display = "none";
 	gameScreen.style.display = "block";
