@@ -6,6 +6,7 @@ html {
 	font-family: "Inter", "Noto Sans JP", sans-serif;
 	margin: 0;
 	background-color: #f0f0f0;
+	cursor: crosshair;
 }
 
 .game-target {
@@ -22,7 +23,7 @@ html {
 	bottom: 50px; /* 残り時間バーの上 */
 	left: 10px;
 	font-size: 20px;
-  pointer-events: none;
+	pointer-events: none;
 }
 
 .time-bar-container {
@@ -55,8 +56,17 @@ html {
 }
 
 button {
-	margin-top: 20px;
 	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.repo {
+	padding: 10px 20px;
+	border-radius: 4px;
+	border: 1px solid #333;
+	text-decoration: none;
+	color: #333;
 	font-size: 16px;
 	cursor: pointer;
 }

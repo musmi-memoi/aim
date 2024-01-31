@@ -25,7 +25,7 @@ function setupGame() {
 	// ゲーム画面全体のクリックイベントを検出してスコアを減点
 	gameScreen.addEventListener("click", function () {
 		score = Math.max(0, score - 50); // スコアを-50点するが、最低0点を保証
-		scoreDisplay.textContent = `スコア: ${Math.round(score)}`;
+		scoreDisplay.textContent = `${Math.round(score)}`;
 		moveTarget();
 	});
 }
@@ -39,7 +39,7 @@ function calculateScore(event) {
 	const distance = Math.sqrt(dx * dx + dy * dy);
 	const newScore = Math.max(0, 50 - distance);
 	score += newScore;
-	scoreDisplay.textContent = `スコア: ${Math.round(score)}`;
+	scoreDisplay.textContent = `${Math.round(score)}`;
 	moveTarget();
 }
 
